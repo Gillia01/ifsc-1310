@@ -1,3 +1,15 @@
+/* -------- Responsive Images ----- */
+
+img{
+    max-width:100%;
+}
+
+/* -------- Utility Classes ----- */
+.container{
+    max-width: 960px;
+    width:60vw;
+    margin:40px auto;
+}
 body{
     font-family: "Oswald", sans-serif;
     margin:0;
@@ -56,4 +68,79 @@ transition:0.4s;
 header.primary nav a:hover{
     background-color: rgba(0,0,0,.8);
 }
+
+#content{
+line-height:1.5;
+}
+
+#content h2{
+    color:red;
+    border-bottom:1px dotted blue;
+}
+#content h3{
+    border-left: 7.5px solid blue;
+    padding:7.5px
+}
+
+#blog{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    gap:2rem;
+}
+
+#blog .post{
+    box-shadow: 0 8px 16px rgba(0,0,0,.6);
+    padding: 16px;
+    border-radius:4px;
+    font-size: .8rem;
+    transition:.5s
+} 
+
+#blog figure{
+    margin:0;
+}
+
+#blog figcaption{
+    text-transform:uppercase;
+    font-size:.6rem;
+    text-align:center;
+    color:darkred;
+}
+
+#blog header{
+    padding-top:10px;
+    font-size:.6rem;
+    color:red
+}
+
+#blog header h2{
+    margin:0;
+}
+
+
+#blog  a{
+    color: red;
+}
+
+#blog .post{
+    box-shadow: 0 8px 16px rgba(0,0,0,.6);
+    
+
+
+
+
 /* ---- CSS Demo ---- */
+@media screen and (max-width:600px) {
+
+    header.primary ul {
+        flex-direction: column;
+        gap:20px;
+        max-width:250px;
+        margin:auto;
+    }
+
+    headerp.primary nav a{
+        display:block;
+    }
+}
